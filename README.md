@@ -27,18 +27,7 @@ A simple web application to manage student records built with **Spring Boot** an
 
 ---
 
-## 🔍 Enhancements
 
-### ✅ Student Search
-Implemented using a GET request and keyword filtering in the controller.  
-```java
-@GetMapping("/students/search")
-public String search(@RequestParam String keyword, Model model) {
-    List<Student> results = studentService.searchByName(keyword);
-    model.addAttribute("students", results);
-    model.addAttribute("keyword", keyword);
-    return "students/list";
-}
 ---
 
 ## 🧠 Auteur
